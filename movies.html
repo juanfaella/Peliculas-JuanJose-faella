@@ -12,30 +12,69 @@
     />
   </head>
 
-  <body class="bg-black text-white">
-    <header class="bg-zinc-800 border">
-      <div class="flex justify-between px-5 items-center">
-        <div class="flex items-center">
-          <img
-            class="w-20"
-            src="./assets/img/Moviestack_isotipo.png"
-            alt="Logo"
-          />
-          <h1>MOVIESTACK</h1>
-        </div>
-        <nav class="flex gap-5">
-          <a class="border p-1" href="./index.html">HOME</a>
-          <a class="border p-1" href="#">MOVIES</a>
-          <a class="border p-1" href="./fav.html">FAV</a>
+  <body class="bg-white text-black">
+    <header class="absolute px-5 items-center">
+      <div class="flex items-center">
+        <img
+          class="w-24 relative top-[250px]"
+          src="./assets/img/Moviestack_isotipo.png"
+          alt="Logo"
+        />
+        <h1 class="text-black relative font-bold text-xl top-[250px]">
+          MOVIESTACK
+        </h1>
+      </div>
+      <div class="text-black absolute bottom-[50px] left-[80vw]">
+        <nav class="flex">
+          <a
+            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
+            href="./index.html"
+            >HOME</a
+          >
+          <a
+            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
+            href="#"
+            >MOVIES</a
+          >
+          <a
+            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
+            href="./fav.html"
+            >FAV</a
+          >
         </nav>
       </div>
     </header>
-
     <main class="flex flex-col items-center">
       <div class="w-11/12">
         <div id="banner" class="">
           <img src="./assets/img/banner2.jpg" alt="" />
         </div>
+      </div>
+      <div>
+        <input
+          id="input-busqueda"
+          name="Busqueda"
+          type="text"
+          class="border-2 px-5"
+          placeholder="Nombre de película"
+        />
+        <select name="genres" id="selected">
+          <option value="All" selected>All</option>
+          <option value="Horror">Horror</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Action">Action</option>
+          <option value="Drama">Drama</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Crime">Crime</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Animation">Animation</option>
+          <option value="Family">Family</option>
+          <option value="Romance">Romance</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="History">History</option>
+        </select>
       </div>
       <div
         id="card"

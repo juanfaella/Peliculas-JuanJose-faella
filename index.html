@@ -12,51 +12,110 @@
     />
   </head>
 
-  <body class="bg-black text-white">
-    <header class="bg-zinc-800 border">
-      <div class="flex justify-between px-5 items-center">
-        <div class="flex items-center">
-          <img
-            class="w-20"
-            src="./assets/img/Moviestack_isotipo.png"
-            alt="Logo"
-          />
-          <h1>MOVIESTACK</h1>
-        </div>
-        <nav class="flex gap-5">
-          <a class="border p-1" href="#">HOME</a>
-          <a class="border p-1" href="./movies.html">MOVIES</a>
-          <a class="border p-1" href="./fav.html">FAV</a>
+  <body class="bg-white text-black">
+    <header class="absolute px-5 items-center">
+      <div class="flex items-center">
+        <img
+          class="w-24 relative top-[250px]"
+          src="./assets/img/Moviestack_isotipo.png"
+          alt="Logo"
+        />
+        <h1 class="text-black relative font-bold text-xl top-[250px]">
+          MOVIESTACK
+        </h1>
+      </div>
+      <div class="text-black absolute bottom-[50px] left-[80vw]">
+        <nav class="flex">
+          <a
+            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
+            href="#"
+            >HOME</a
+          >
+          <a
+            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
+            href="./movies.html"
+            >MOVIES</a
+          >
+          <a
+            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
+            href="./fav.html"
+            >FAV</a
+          >
         </nav>
       </div>
     </header>
 
     <main class="flex flex-col items-center">
-      <div class="w-11/12">
+      <div class="w-[100vw]">
         <div id="banner" class="">
-          <img src="./assets/img/banner.png" alt="" />
+          <img src="./assets/img/banner3.jpg" class="w-[100vw]" alt="" />
         </div>
-        <div class="flex">
+        <div class="flex flex-col items-center gap-5">
           <p class="p-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-            quo architecto et assumenda ipsam? Nesciunt ut veniam, vitae
-            perferendis non quasi quod molestiae dolorem repellendus, ab ipsa
-            ipsum atque inventore! Sapiente, officia! Dolor pariatur veniam eum
-            repellat eius recusandae ratione eaque porro sunt minus quibusdam
-            voluptatibus dolorum impedit, atque expedita nobis unde? Fuga
-            deserunt velit qui dolorem rem iusto maxime? Alias, id! Ipsam
-            numquam velit adipisci nobis enim, minus accusamus natus voluptates
-            vero iusto odio cumque? Ab neque recusandae maiores illum tempore
-            unde, debitis autem adipisci, dolorem nisi suscipit laudantium?
+            Welcome to Moviestack, your online movie oasis! At Moviestack, we
+            are proud to offer an exceptional movie experience without leaving
+            your home. Immerse yourself in a world of emotions, action and
+            high-quality entertainment. With an easy-to-use interface, seamless
+            streaming, and an ever-expanding library, Moviestack is your
+            destination to discover the best movies. Explore our carefully
+            curated categories, from epic dramas to laugh-out-loud comedies. Are
+            you passionate about suspense? Or do you prefer to explore fantasy
+            worlds? Whatever your taste, at Moviestack, you will find something
+            that will captivate you. We regularly update our catalog to ensure
+            that you always have access to the latest and most exciting movies.
+            Join us on this exciting cinematic adventure and discover why
+            Moviestack is more than a streaming platform; It's an experience.
           </p>
+          <div class="flex flex-col gap-4 items-center">
+            <details
+              class="flex text-center bg-indigo-700 w-[50em] shadow-lg shadow-indigo-500/50 rounded-2xl hover:bg-indigo-900 hover:w-[50em] hover:text-lg"
+            >
+              <summary>Behind the Scenes Exclusive</summary>
+              <p>
+                At Moviestack, you will not only watch movies, but we also offer
+                you exclusive behind-the-scenes access. Discover the secrets of
+                the creative process, interviews with the cast and much more.
+                Immerse yourself in the magic of cinema in a way you've never
+                experienced before.
+              </p>
+            </details>
+            <details
+              class="flex text-center bg-indigo-700 w-[50em] rounded-2xl hover:bg-indigo-900 hover:text-lg shadow-lg shadow-indigo-500/50"
+            >
+              <summary>laughter and love</summary>
+              <p>
+                Embark on an epic journey with "Times of Change", a film that
+                will transport you to unexplored worlds. With stunning visuals
+                and a captivating narrative, this film is a gem you won't want
+                to miss.
+              </p>
+            </details>
+            <details
+              class="flex text-center bg-indigo-700 w-[50em] rounded-2xl hover:bg-indigo-900 hover:text-lg shadow-lg shadow-indigo-500/50 hover:w-[50em]"
+            >
+              <summary>Tiempos de Cambio</summary>
+              <p>
+                Embárcate en un viaje épico con "Tiempos de Cambio", una
+                película que te transportará a mundos inexplorados. Con
+                impresionantes efectos visuales y una narrativa cautivadora,
+                esta película es una joya que no querrás perderte.
+              </p>
+            </details>
+          </div>
         </div>
       </div>
       <div class="flex gap-28 py-12">
         <a href="./movies.html"
-          ><img src="./assets/img/llamado.jpg" class="w-96" alt=""
+          ><img
+            src="./assets/img/llamado.jpg"
+            class="w-96 hover:w-[400px] shadow-lg shadow-white/50"
+            alt=""
         /></a>
         <a href="#"
-          ><img src="./assets/img/llamadofav.jpg" class="w-96" alt=""
+          ><img
+            src="./assets/img/llamadofav.jpg"
+            class="w-96 hover:w-[400px] shadow-lg shadow-white/50"
+            alt=""
         /></a>
       </div>
     </main>
