@@ -73,7 +73,7 @@ movies = [
       "Thriller"
     ],
     "original_language": "en",
-    "overview": "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything—and everyone—that Dom loves, forever.",
+    "overview": "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. ",
     "popularity": 1073.097,
     "release_date": "5/17/2023",
     "title": "Fast X",

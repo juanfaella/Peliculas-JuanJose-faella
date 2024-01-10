@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies - Moviestack</title>
+    <title>Welcome - Moviestack</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="shortcut icon"
@@ -24,7 +24,9 @@
           MOVIESTACK
         </h1>
       </div>
-      <div class="text-black absolute bottom-[50px] left-[80vw]">
+      <div
+        class="text-black absolute bottom-[50px] left-[80vw] bg-black rounded-2xl"
+      >
         <nav class="flex">
           <a
             class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
@@ -32,54 +34,24 @@
             >HOME</a
           >
           <a
-            class="w-20 text-white font-bold text-center bg-[#6d38e0] shadow-lg shadow-[#6d38e0]/50 rounded-full"
-            href="#"
+            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
+            href="./movies.html"
             >MOVIES</a
           >
           <a
             class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
-            href="#"
+            href="./fav.html"
             >FAV</a
           >
         </nav>
       </div>
     </header>
+
     <main class="flex flex-col items-center">
       <div class="w-[100vw]">
-        <div id="banner" class="">
-          <img src="./assets/img/banner3.jpg" class="w-[100vw]" alt="" />
-        </div>
+        <div id="banner" class=""></div>
       </div>
-      <div>
-        <input
-          id="input-busqueda"
-          name="Busqueda"
-          type="text"
-          class="border-2 px-5 my-8 mx-8 rounded-2xl text-black"
-          placeholder="Nombre de película"
-        />
-        <select class="text-black rounded-2xl" name="genres" id="selected">
-          <option value="All" selected>All</option>
-          <option value="Horror">Horror</option>
-          <option value="Mystery">Mystery</option>
-          <option value="Thriller">Thriller</option>
-          <option value="Action">Action</option>
-          <option value="Drama">Drama</option>
-          <option value="Adventure">Adventure</option>
-          <option value="Crime">Crime</option>
-          <option value="Fantasy">Fantasy</option>
-          <option value="Comedy">Comedy</option>
-          <option value="Animation">Animation</option>
-          <option value="Family">Family</option>
-          <option value="Romance">Romance</option>
-          <option value="Science Fiction">Science Fiction</option>
-          <option value="History">History</option>
-        </select>
-      </div>
-      <div
-        id="card"
-        class="flex flex-wrap justify-around px-5 gap-5 py-12"
-      ></div>
+      <div id="info-movi"></div>
     </main>
 
     <footer class="items-center bg-zinc-800 border p-3 text-center">
@@ -87,5 +59,6 @@
     </footer>
     <script src="./assets/js/datamovistack.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/detalle.js"></script>
   </body>
 </html>
