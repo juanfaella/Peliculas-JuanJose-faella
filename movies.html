@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movies - Moviestack</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/style/style.css" />
     <link
       rel="shortcut icon"
       href="./assets/img/Moviestack_favicon.png"
@@ -12,53 +13,57 @@
     />
   </head>
 
-  <body class="bg-black text-white">
+  <body class="bg-white text-black">
     <header class="absolute px-5 items-center">
       <div class="flex items-center">
         <img
-          class="w-24 relative top-[250px]"
+          class="w-24"
           src="./assets/img/Moviestack_isotipo.png"
           alt="Logo"
         />
-        <h1 class="text-black relative font-bold text-xl top-[250px]">
-          MOVIESTACK
-        </h1>
+        <h1 class="text-white font-bold text-xl">MOVIESTACK</h1>
       </div>
       <div class="text-black absolute bottom-[50px] left-[80vw]">
         <nav class="flex">
           <a
-            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
+            class="w-20 text-white font-bold text-center hover:bg-black/50 hover:shadow-lg hover:shadow-black/50 hover:rounded-full"
             href="./index.html"
             >HOME</a
           >
           <a
-            class="w-20 text-white font-bold text-center bg-[#6d38e0] shadow-lg shadow-[#6d38e0]/50 rounded-full"
+            class="w-20 text-white font-bold text-center bg-black/50 shadow-lg shadow-black/50 rounded-full"
             href="#"
             >MOVIES</a
           >
           <a
-            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
-            href="#"
+            class="w-20 text-white font-bold text-center hover:bg-black/50 hover:shadow-lg hover:shadow-black/50 hover:rounded-full"
+            href="./fav.html"
             >FAV</a
           >
         </nav>
       </div>
     </header>
     <main class="flex flex-col items-center">
-      <div class="w-[100vw]">
-        <div id="banner" class="">
-          <img src="./assets/img/banner3.jpg" class="w-[100vw]" alt="" />
-        </div>
+      <div id="banner" class="">
+        <img
+          src="./assets/img/bannerMovies.jpg"
+          class="w-[100vw] shadow-lg shadow-black/50 mb-14"
+          alt=""
+        />
       </div>
       <div>
         <input
           id="input-busqueda"
           name="Busqueda"
           type="text"
-          class="border-2 px-5 my-8 mx-8 rounded-2xl text-black"
-          placeholder="Nombre de película"
+          class="border border-black px-5 my-2 mx-8 rounded-2xl text-black"
+          placeholder="Movies Name"
         />
-        <select class="text-black rounded-2xl" name="genres" id="selected">
+        <select
+          class="text-black border border-black rounded-2xl"
+          name="genres"
+          id="selected"
+        >
           <option value="All" selected>All</option>
           <option value="Horror">Horror</option>
           <option value="Mystery">Mystery</option>
@@ -76,16 +81,22 @@
           <option value="History">History</option>
         </select>
       </div>
+      <h1
+        class="text-2xl font-bold bg-white text-black w-[20vw] text-center h-[6vh] rounded-2xl"
+      >
+        Our movie for you
+      </h1>
       <div
         id="card"
         class="flex flex-wrap justify-around px-5 gap-5 py-12"
       ></div>
     </main>
 
-    <footer class="items-center bg-zinc-800 border p-3 text-center">
-      <h2 class="ml-5">MindHub Cohort 53° Juan Jose Faella</h2>
+    <footer
+      class="items-center bg-[#6d38e0] border border-black p-3 text-center"
+    >
+      <h2 class="ml-5 text-white">MindHub Cohort 53° Juan Jose Faella</h2>
     </footer>
-    <script src="./assets/js/datamovistack.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

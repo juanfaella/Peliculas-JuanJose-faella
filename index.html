@@ -12,33 +12,31 @@
     />
   </head>
 
-  <body class="bg-black text-white">
+  <body class="bg-white text-black">
     <header class="absolute px-5 items-center">
       <div class="flex items-center">
         <img
-          class="w-24 relative top-[250px]"
+          class="w-24"
           src="./assets/img/Moviestack_isotipo.png"
           alt="Logo"
         />
-        <h1 class="text-black relative font-bold text-xl top-[250px]">
-          MOVIESTACK
-        </h1>
+        <h1 class="text-white font-bold text-xl">MOVIESTACK</h1>
       </div>
       <div class="text-black absolute bottom-[50px] left-[80vw]">
         <nav class="flex">
           <a
-            class="w-20 text-white font-bold text-center bg-[#6d38e0] shadow-lg shadow-[#6d38e0]/50 rounded-full"
+            class="w-20 text-white font-bold text-center bg-black/50 shadow-lg shadow-black/50 rounded-full"
             href="#"
             >HOME</a
           >
           <a
-            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
+            class="w-20 text-white font-bold text-center hover:bg-black/50 hover:shadow-lg hover:shadow-black/50 hover:rounded-full"
             href="./movies.html"
             >MOVIES</a
           >
           <a
-            class="w-20 text-white font-bold text-center hover:bg-[#6d38e0] hover:shadow-lg hover:shadow-[#6d38e0]/50 hover:rounded-full"
-            href="#"
+            class="w-20 text-white font-bold text-center hover:bg-black/50 hover:shadow-lg hover:shadow-black/50 hover:rounded-full"
+            href="./fav.html"
             >FAV</a
           >
         </nav>
@@ -46,32 +44,41 @@
     </header>
 
     <main class="flex flex-col items-center">
-      <div class="w-[100vw]">
+      <div class="">
         <div id="banner" class="">
-          <img src="./assets/img/banner3.jpg" class="w-[100vw]" alt="" />
+          <img
+            src="./assets/img/banner.jpg"
+            class="w-[100vw] shadow-lg shadow-black/50"
+            alt=""
+          />
         </div>
         <div class="flex flex-col items-center gap-5">
-          <p class="p-8">
-            Welcome to Moviestack, your online movie oasis! At Moviestack, we
-            are proud to offer an exceptional movie experience without leaving
-            your home. Immerse yourself in a world of emotions, action and
-            high-quality entertainment. With an easy-to-use interface, seamless
-            streaming, and an ever-expanding library, Moviestack is your
-            destination to discover the best movies. Explore our carefully
-            curated categories, from epic dramas to laugh-out-loud comedies. Are
-            you passionate about suspense? Or do you prefer to explore fantasy
-            worlds? Whatever your taste, at Moviestack, you will find something
-            that will captivate you. We regularly update our catalog to ensure
-            that you always have access to the latest and most exciting movies.
-            Join us on this exciting cinematic adventure and discover why
-            Moviestack is more than a streaming platform; It's an experience.
+          <h1 class="text-2xl font-bold mt-14">Welcome to Moviestack</h1>
+          <p
+            class="p-8 bg-[#ffffff73] my-14 w-[80vw] rounded-2xl border-[1px] border-black shadow-lg shadow-black-/50"
+          >
+            Your online movie oasis! At Moviestack, we are proud to offer an
+            exceptional movie experience without leaving your home. Immerse
+            yourself in a world of emotions, action and high-quality
+            entertainment. With an easy-to-use interface, seamless streaming,
+            and an ever-expanding library, Moviestack is your destination to
+            discover the best movies. Explore our carefully curated categories,
+            from epic dramas to laugh-out-loud comedies. Are you passionate
+            about suspense? Or do you prefer to explore fantasy worlds? Whatever
+            your taste, at Moviestack, you will find something that will
+            captivate you. We regularly update our catalog to ensure that you
+            always have access to the latest and most exciting movies. Join us
+            on this exciting cinematic adventure and discover why Moviestack is
+            more than a streaming platform; It's an experience.
           </p>
           <div class="flex flex-col gap-4 items-center">
             <details
-              class="flex text-center bg-indigo-700 w-[15em] shadow-lg shadow-indigo-500/50 rounded-2xl hover:bg-indigo-900 hover:text-lg"
+              class="cursor-pointer flex text-center w-[15em] shadow-lg shadow-indigo-500/50 rounded-2xl border-[1px] border-black hover:bg-gray-300 hover:text-base"
             >
-              <summary>Behind the Scenes Exclusive</summary>
-              <p>
+              <summary class="font-bold py-3">
+                Behind the Scenes Exclusive
+              </summary>
+              <p class="text-sm p-2">
                 At Moviestack, you will not only watch movies, but we also offer
                 you exclusive behind-the-scenes access. Discover the secrets of
                 the creative process, interviews with the cast and much more.
@@ -80,10 +87,10 @@
               </p>
             </details>
             <details
-              class="flex text-center bg-indigo-700 w-[15em] rounded-2xl hover:bg-indigo-900 hover:text-lg shadow-lg shadow-indigo-500/50"
+              class="cursor-pointer flex text-center w-[15em] rounded-2xl border-[1px] border-black hover:bg-gray-300 hover:text-base shadow-lg shadow-indigo-500/50"
             >
-              <summary>laughter and love</summary>
-              <p>
+              <summary class="font-bold py-3">Laughter and love</summary>
+              <p class="text-sm´ p-2">
                 Embark on an epic journey with "Times of Change", a film that
                 will transport you to unexplored worlds. With stunning visuals
                 and a captivating narrative, this film is a gem you won't want
@@ -91,10 +98,10 @@
               </p>
             </details>
             <details
-              class="flex text-center bg-indigo-700 w-[15em] rounded-2xl hover:bg-indigo-900 hover:text-lg shadow-lg shadow-indigo-500/50"
+              class="cursor-pointer flex text-center w-[15em] rounded-2xl border-[1px] border-black hover:bg-gray-300 hover:text-base shadow-lg shadow-indigo-500/50"
             >
-              <summary>Times of change</summary>
-              <p>
+              <summary class="font-bold py-3">Times of change</summary>
+              <p class="text-sm p-2">
                 Embark on an epic journey with "Times of Change", a film that
                 will transport you to unexplored worlds. With Stunning visuals
                 and captivating narrative, This movie is a gem that you won't
@@ -104,24 +111,48 @@
           </div>
         </div>
       </div>
-      <div class="flex gap-28 py-12">
-        <a href="./movies.html"
-          ><img
-            src="./assets/img/llamado.jpg"
-            class="w-96 hover:w-[400px] shadow-lg shadow-white/50"
-            alt=""
-        /></a>
-        <a href="#"
-          ><img
-            src="./assets/img/llamadofav.jpg"
-            class="w-96 hover:w-[400px] shadow-lg shadow-white/50"
-            alt=""
-        /></a>
+      <div class="flex flex-col gap-28 py-12">
+        <div
+          class="flex py-8 justify-center gap-28 items-center w-[60vw] border border-black rounded-2xl shadow-lg shadow-black/50"
+        >
+          <a href="./movies.html"
+            ><img
+              src="./assets/img/llamado.jpg"
+              class="w-96 hover:w-[400px] shadow-lg shadow-black/50"
+              alt=""
+          /></a>
+          <p class="w-[15em] text-center">
+            Dive into the thrilling world of cinema! Explore a unique experience
+            at MovieStacl, your go-to online destination for movies. From
+            blockbuster hits to hidden gems, we've got everything you need for
+            an unforgettable movie night. Click now and enjoy the magic of the
+            seventh art from the comfort of your home!
+          </p>
+        </div>
+        <div
+          class="flex py-8 justify-center gap-28 items-center w-[60vw] border border-black rounded-2xl shadow-lg shadow-black/50"
+        >
+          <a href="./fav.html"
+            ><img
+              src="./assets/img/llamadofav.jpg"
+              class="w-96 hover:w-[400px] shadow-lg shadow-black/50"
+              alt=""
+          /></a>
+          <p class="w-[15em] text-center">
+            Explore a world of cinematic wonders on MovieStack! Immerse yourself
+            in the magic of movies from the comfort of your home. Ready to enjoy
+            your favorite films online? Click now and unleash the cinematic fun
+            on MovieStack. Don't miss a second of entertainment! #MovieTime
+            #EnjoyTheShow
+          </p>
+        </div>
       </div>
     </main>
 
-    <footer class="items-center bg-zinc-800 border p-3 text-center">
-      <h2 class="ml-5">MindHub Cohort 53° Juan Jose Faella</h2>
+    <footer
+      class="items-center bg-[#6d38e0] border border-black p-3 text-center"
+    >
+      <h2 class="ml-5 text-white">MindHub Cohort 53° Juan Jose Faella</h2>
     </footer>
     <script src="./assets/js/datamovistack.js"></script>
     <script src="./assets/js/app.js"></script>

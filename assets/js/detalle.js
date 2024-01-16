@@ -1,18 +1,16 @@
-const $containerMovi = document.getElementById("info-movi")
-const $bannerContainer = document.getElementById("banner")
+fetch (url, init).then(response => response.json()).then(moviesData => {
+        const saveMovie = moviesData.movies.filter(moviesData => moviesData)
+        const $containerMovi = document.getElementById("info-movi")
 
-const queryParams = new URLSearchParams( location.search )
-const id = queryParams.get('id')
+        const queryParams = new URLSearchParams( location.search )
+        const id = queryParams.get('id')
 
-const moviesFind = movies.find( movi => movi.id == id)
+        const moviesFind = saveMovie.find( movi => movi.id == id)
 
-const imgdata = document.getElementById('banner')
+        $containerMovi.innerHTML = `
 
-$bannerContainer.innerHTML = `<img src="${moviesFind.image}" class="w-[100vw] h-[100vh]" alt="" />`
-
-$containerMovi.innerHTML = `
 <div class="w-[70em] py-5 flex justify-center gap-8">
-    <img class=""src="${moviesFind.image}">
+    <img class="" src="https://moviestack.onrender.com/static/${moviesFind.image}">
     <div>
         <h1 class="py-5" >${moviesFind.title}</h1>
         <p class="py-5">${moviesFind.tagline}</p>
@@ -56,3 +54,6 @@ $containerMovi.innerHTML = `
 </table>
 </div>
 `
+        
+})
+.catch(err => console.log(err))

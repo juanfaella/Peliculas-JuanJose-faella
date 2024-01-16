@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies - Moviestack</title>
+    <title>Home - Moviestack</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link
@@ -17,6 +17,7 @@
     <header class="absolute px-5 items-center">
       <div class="flex items-center">
         <img
+        
           class="w-24"
           src="./assets/img/Moviestack_isotipo.png"
           alt="Logo"
@@ -31,35 +32,36 @@
             >HOME</a
           >
           <a
-            class="w-20 text-white font-bold text-center bg-black/50 shadow-lg shadow-black/50 rounded-full"
+            class="w-20 text-white font-bold text-center hover:bg-black/50 hover:shadow-lg hover:shadow-black/50 hover:rounded-full"
             href="./movies.html"
             >MOVIES</a
           >
           <a
-            class="w-20 text-white font-bold text-center hover:bg-black/50 hover:shadow-lg hover:shadow-black/50 hover:rounded-full"
-            href="./fav.html"
+            class="w-20 text-white font-bold text-center bg-black/50 shadow-lg shadow-black/50 rounded-full"
+            href="#"
             >FAV</a
           >
         </nav>
       </div>
     </header>
-    <main class="flex flex-col items-center">
-      <div id="banner" class="">
-        <img
-          src="./assets/img/bannerInfoMovies.jpg"
-          class="w-[100vw] shadow-lg shadow-black/50 mb-14"
-          alt=""
-        />
-      </div>
-      <div id="info-movi"></div>
-    </main>
 
+    <main class="flex  items-center">
+      <div class="">
+        <div id="banner" class="">
+          <img
+            src="./assets/img/bannerYourFavorites.jpg"
+            class="w-[100vw] shadow-lg shadow-black/50"
+            alt=""
+          />
+        </div>
+
+      <div id="fav-movi" class="flex justify-around flex-wrap py-12 gap-5"></div>
+    </main>
     <footer
-      class="items-center bg-[#6d38e0] border border-black p-3 text-center"
-    >
-      <h2 class="ml-5 text-white">MindHub Cohort 53° Juan Jose Faella</h2>
-    </footer>
-    <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/detalle.js"></script>
+    class="items-center bg-[#6d38e0] border border-black p-3 text-center"
+  >
+    <h2 class="ml-5 text-white">MindHub Cohort 53° Juan Jose Faella</h2>
+  </footer>
+    <script src="./assets/js/favs.js"></script>
   </body>
 </html>
